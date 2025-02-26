@@ -2,10 +2,10 @@
 // Licensed under the MIT License.
 
 param project_suffix string
-param az_location string = 'eastus'
+param az_location string = 'centralus'
 @secure()
-param github_client_id string
 param github_client_secret string
+param github_client_id string
 
 param logging bool = true
 
