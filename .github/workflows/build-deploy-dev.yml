@@ -32,7 +32,8 @@ jobs:
         npm i
         npm run clean
         npm run build 
-        ls
+        rm -rf /home/site/wwwroot/*
+        cp -r /home/site/repository/api/* /home/site/wwwroot/
     - name: Zip artifact for deployment
       run: zip release.zip ./api -r
 
