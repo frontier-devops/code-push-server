@@ -23,7 +23,6 @@ resource "azurerm_linux_web_app" "root" {
   https_only          = true
  site_config {
    always_on = true
-   health_check_path = "/"
  
    application_stack   {
     node_version = "18-lts"
